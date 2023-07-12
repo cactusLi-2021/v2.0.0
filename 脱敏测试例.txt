@@ -1,0 +1,38 @@
+http://www.quwo.gov.cn/contents/12481/1125015.html  邮箱 、座机号、日期(http路径中带有日期，可能会导致文件打不开)
+https://www.lishixinzhi.com/zs/post/103670.html  银行卡号 
+http://www.szzijiang.cn/init.php/contactus/main 中文地址，手机号，座机号，邮箱
+https://baijiahao.baidu.com/s?id=1679232543801148675&wfr=spider&for=pc 身份证，座机号，地址
+
+https://www.youdao.com/result?word=Cutie%20Honey&lang=en 自定义
+http://www.hunanpea.com/Article/768d8b13-39bb-4a80-a93a-841ff222d54b/InternalArticleDetail.do
+http://www.legaldaily.com.cn/index/content/2022-04/22/content_8708270.htm
+
+
+https://wap.peopleapp.com/article/rmh29322494/rmh29322494
+http://nyncj.jingmen.gov.cn/art/2022/8/12/art_2992_910028.html
+
+http://wjw.beijing.gov.cn/zwgk_20040/tzgg/202205/t20220507_2703702.html
+http://www.beijing.gov.cn/hudong/gfxwjzj/zjxx/202205/t20220520_2717099.html
+http://www.dg.gov.cn/zwgk/zfxxgkml/myz/qt/tzgg/content/post_3862804.html
+
+
+待屏蔽规则
+
+金额数字仿真
+金额数字遮蔽
+整数仿真
+整数可逆
+整数遮蔽
+整数期间
+
+Ipv4地址仿真
+Ipv4地址可逆
+Ipv4地址遮蔽
+MAC地址仿真
+MAC地址可逆
+MAC地址遮蔽
+
+遗留问题：
+页面src或者href中的路径被脱敏
+
+
