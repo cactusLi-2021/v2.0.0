@@ -1,0 +1,27 @@
+NetentSec Product License
+MachineType: NI7100-10
+MachineCode: 10
+Serial: EF26000729
+Version: 5
+Product Name: NetentSec Internet Control Gateway
+ICG_NAT_DETECT: on
+ICG_SSL_VPN: on
+ICG_WA_COLLECT: on
+ICG_PROXY: on
+ICG_DLP: on
+BUSINESS_AUDIT: on
+ValidFrom: Tue,27 Jun 2023 00:00:00 CST
+ValidTo: Wed,27 Sep 2023 00:00:00 CST
+LicenseInfo:
+地区: 中国大陆
+用户: 未授权
+客户服务号: netentsec
+license_creator: admin
+AC: A16B637E0A1278F94BA7379D75D27084
+SslAudit: on
+END
+MachineInfo: 594903ea353a3cf02bd21f1a1cfd196aba4e64b3
+Signature:
+Sme/ZKA6VZxv0c/WIxD1q34VBaXgUbIQi02yUgL433JKCk8yh95f2/0cXMA1PEY4
+jmF2OLDYgPk2Cuyfk1W0PVZvSbM8Hyfig+e7GTJqutyfsnQMvlqxHDgXBCsh2yIG
+yzlDRxZDF5mec51oX/YDVDrsCpZWYSW18HXM87YbQAA=
