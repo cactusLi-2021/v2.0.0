@@ -1,0 +1,106 @@
+################################[23-07-12 17:26:10]################################
+[New_Task][ct_id-100667473] : in both_side_audit, audit_mode = normal_mode, app_type = APP_TYPE_HTTP, app_mark = 0xa602 audit_mark = 0x80
+mode [ONLINE]]
+-----policy info :
+pid=270, type=5
+------------------
+[TASK_INIT] c2s first!
+req init : connect_flag=0x0
+Set SESSION_TYPE_NONEED_SENSITIVE, no need do sensitive_data_init
+[TASK_INIT] success!
+
+Recv Client2Server Data and cur_data_len = 1520, total_data_len = 1520
+tcp->appmark = a602, ctx->appmark = a602
+[content_encrypt] if_need_content_dm_data ret=1...
+[content_encrypt] need do encrypt (2)
+Set POLICY_CONFIG_WEBPAGE_RECORD_CONTENT. and need record req_header_data
+Extra request feild : method = POST url = /note/updateNoteOrContent
+Extra request field : Host
+		value = leanote.com
+Extra request field : Connection
+Extra request field : content length
+		value = 288
+Extra request field : content type
+Extra request field : Referer
+Extra request field : Cookie
+Do request header......
+-----Do http request header parse end-----
+Do Precise Signature Search signature_id=0x15cf3 session_type=0x8...
+Search Precise Signture *Success*!
+Get file_direction = 0 fragment_block_size=0
+[Type_Confirm] : type = 	FUNCTION_POST,
+[AD PUSH] : (request) not webpage, return!
+[WMK] do_wmk_request_policy_process......
+[WMK] no wmk policy
+[DATAMASK] do_datamask_request_policy_process......
+[DATAMASK] no datamask policy
+[content_encrypt] need_content_encrypt_or_dm check...
+[content_encrypt] need do encrypt (1)
+[content_encrypt] if_need_content_dm_data ret=1...
+[content_encrypt] mybe content_dm
+[WMK] set rection AUDIT_REACTION_NSAUDIT_PROXY, connect_flag CONN_WMK_DM_PROXY_MODE here!!
+[content_encrypt] need_content_encrypt_or_dm check...
+[content_encrypt] connect_flag = 0xc01
+-----Do http request body parse start-----
+----Do change stream type to STREAM_HTTP_NORMAL----
+[*content*] need_file_type=1, need_md5=0, need_sha1=0, policy_type=0x10, act=0x0, need_text_deep_fti=0 common_info->ctx=(nil)
+bypass_disable is set TRUE by file_extractor_need_do
+[AUDIT_END]***Here decoder DECODER_HTTP_REQ for stream form Client2Server END!***
+Do http_stream_flush_offset_set ......
+stream_offset_info start_offset=1520
+in decoder_http_req_normal_process
+<high_latency_push_data_process> this_data=1520
+<high_latency_push_data_process> wmk or datamask, do proxy data
+http_proxy_data_process : connect_flag=0xc01
+[AD PUSH] : (request) need no push and clear flag!
+end ip_id = 0
+ [TASK_STAT] is TASK_STAT_INITED, and bypass_disable = 1
+
+Recv Client2Server Data and cur_data_len = 288, total_data_len = 288
+tcp->appmark = a602, ctx->appmark = a602
+in decoder_http_req_normal_process
+write_raw_data_for_webpage_content:len=288 is_end=1
+webpage_need_data_for_config return
+Do Extra Tag from request body [normal body]
+Normal body in START_STEP
+Get a cbk_func_id = 0
+Get s special signature_attribute_bits = 0x0
+Extra tag : ( CONTENT )
+Extra tag : content end
+extract cond_extract=0x200
+[sensitive_data] set no session_data_record flag, no need to get
+Do CONN_POST_HANGUP content_protection_process
+[*content*] [content_protection_process] check upload = 1
+[*content*] need_file_type=1, need_md5=0, need_sha1=0, policy_type=0x10, act=0x0, need_text_deep_fti=0 common_info->ctx=(nil)
+[*content*] need_file_type=1, need_md5=0, need_sha1=0, policy_type=0x10, act=0x0, need_text_deep_fti=0 common_info->ctx=(nil)
+[sensitive_data] sensitive_data_file_act_policy...
+[*content*] [fe_ctx_content_ctx_init] set CONTENT_CTX_ENABLE, flag = 0x5
+[*content*] [content_protection_process] url: param.content = 0x71c0280 content_length=237 =IsMarkdown=false&NoteId=64ae71751d0fb93909000001&NotebookId=64ae71541d0fb93909000000&Content=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>&Desc=FFFFF MAIL:DSKJKSJDKJSK@163.COM&ImgSrc=&Abstract=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>=
+[*content*] [content_protection_process] xml: param.content = 0x71c0280 content_length=236 =IsMarkdown=false&NoteId=64ae71751d0fb93909000001&NotebookId=64ae71541d0fb93909000000&Content=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>&Desc=FFFFF MAIL:DSKJKSJDKJSK@163.COM&ImgSrc=&Abstract=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>=
+[*content*] [content_protection_process] param.content = 0x60272c0 content_length=236 =IsMarkdown=false&NoteId=64ae71751d0fb93909000001&NotebookId=64ae71541d0fb93909000000&Content=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>&Desc=FFFFF MAIL:DSKJKSJDKJSK@163.COM&ImgSrc=&Abstract=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>=
+[*content*] [content_policy_match_process] content_match_info : is_file=0,is_upload=1,cur_uncompression_layer=0,local_av_securtype=0x0,file_type=0,content_length=236,total_length=0,file_name=(null),content=0x60272c0,need_text_deep_fti=0
+[*content*] [content_policy_match_process] md5_str = 00000000000000000000000000000000
+[*content*] [content_policy_match_process] sha1_str = 0000000000000000000000000000000000000000
+[*content] [content_policy_match_content_send_result] policy_id=21,policy_pid=270,policy_priority=0,action_type=3,policy_name=脱敏测试
+[*content*] [log] [set_content_send_param] action_type=3,policy_name=脱敏测试
+[*content*] [log] [set_content_send_param] set POLICY_ACTION_TYPE_DATAMASK
+dm_keyword_num =3 dm_keyword orders:0 113 
+1 154 
+2 212 
+skip 3
+[4]=1
+	[0]=113
+	[1]=154
+	[2]=212
+orders[0]=4 pos_start[record]=1; [0]=113
+	[0]=113
+	[1]=154
+	[2]=212
+orders[1]=0 pos_start[record]=113; skip 0
+[1]=154
+skip 0
+	[1]=154
+	[2]=212
+orders[2]=1 pos_start[record]=154; 
+[*content*] len=236 data=[IsMarkdown=false&NoteId=64ae71751d0fb93909000001&NotebookId=64ae71541d0fb93909000000&Content=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>&Desc=FFFFF MAIL:DSKJKSJDKJSK@163.COM&ImgSrc=&Abstract=<p>FFFFF</p><p>MAIL:DSKJKSJDKJSK@163.COM</p>]
+[*content*] dm_len=1 post_data=[I]
