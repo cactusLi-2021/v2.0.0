@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 93
+Accept-Ranges: bytes
+Server: HFS 2.4.0 RC6
+Content-Encoding: gzip
+[{
+"url":"手机号%20(1).txt",
+"name":"手机号 (1).txt",
+"size":"15",
+"speed":"3.7 K"
+}
+]
